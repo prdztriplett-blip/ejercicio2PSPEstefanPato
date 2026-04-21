@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>398</width>
+    <height>764</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* ===== GENERAL ===== */
+QWidget {
+    background-color: #F5EFE6;
+    font-family: &quot;Segoe UI&quot;, &quot;Arial&quot;;
+    font-size: 14px;
+    color: #3E3E3E;
+}
+
+/* ===== LABELS ===== */
+QLabel {
+    color: #4A3F35;
+    font-weight: 500;
+}
+
+/* ===== LINE EDIT ===== */
+QLineEdit {
+    background-color: #FFFFFF;
+    border: 1px solid #D6CFC7;
+    border-radius: 8px;
+    padding: 6px 10px;
+}
+
+QLineEdit:focus {
+    border: 1px solid #A67B5B;
+}
+
+/* ===== BOTONES ===== */
+QPushButton {
+    background-color: #A67B5B;
+    color: white;
+    border-radius: 10px;
+    padding: 8px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #8C684B;
+}
+
+QPushButton:pressed {
+    background-color: #6F523A;
+}
+
+/* ===== BOTONES SECUNDARIOS (tests) ===== */
+QPushButton#btn_test1,
+QPushButton#btn_test2,
+QPushButton#btn_test3,
+QPushButton#btn_test4 {
+    background-color: #E6D3C3;
+    color: #4A3F35;
+}
+
+QPushButton#btn_test1:hover,
+QPushButton#btn_test2:hover,
+QPushButton#btn_test3:hover,
+QPushButton#btn_test4:hover {
+    background-color: #D6BFAE;
+}
+
+/* ===== TABLA ===== */
+QTableWidget {
+    background-color: #FFFFFF;
+    border: 1px solid #D6CFC7;
+    gridline-color: #E0D8CF;
+    border-radius: 8px;
+}
+
+QHeaderView::section {
+    background-color: #A67B5B;
+    color: white;
+    padding: 5px;
+    border: none;
+}
+
+QTableWidget::item {
+    padding: 5px;
+}
+
+QTableWidget::item:selected {
+    background-color: #D6BFAE;
+    color: #3E3E3E;
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="btn_caso1">
+       <property name="text">
+        <string>CASO1</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_caso2">
+       <property name="text">
+        <string>CASO2</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_caso3">
+       <property name="text">
+        <string>CASO3</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_caso4">
+       <property name="text">
+        <string>CASO4</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTableWidget" name="tabla_datos">
+       <property name="rowCount">
+        <number>10</number>
+       </property>
+       <property name="columnCount">
+        <number>4</number>
+       </property>
+       <attribute name="horizontalHeaderVisible">
+        <bool>true</bool>
+       </attribute>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <column>
+        <property name="text">
+         <string>X</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Y</string>
+        </property>
+       </column>
+       <column/>
+       <column/>
+       <item row="0" column="2">
+        <property name="text">
+         <string/>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="input_xk">
+       <property name="placeholderText">
+        <string>Ingresa X</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_calcular">
+       <property name="text">
+        <string>Calcular</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Xk:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="lbl_b0">
+       <property name="text">
+        <string>b0:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="lbl_b1">
+       <property name="text">
+        <string>b1:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="lbl_r">
+       <property name="text">
+        <string>r:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="lbl_r2">
+       <property name="text">
+        <string>r2:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="lbl_yk">
+       <property name="text">
+        <string>Predicción:</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

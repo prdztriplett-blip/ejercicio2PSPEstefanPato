@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* ====== QMainWindow ====== */
+QMainWindow {
+    background-color: #F5E6D3; /* beige claro */
+}
+
+/* ====== Menu Bar ====== */
+QMenuBar {
+    background-color: #D97706; /* naranja cálido */
+    color: #FFF8F0;
+    font-family: &quot;Segoe UI&quot;;
+    font-size: 14px;
+    padding: 4px;
+}
+
+/* Item del menú */
+QMenuBar::item {
+    background: transparent;
+    padding: 6px 12px;
+    margin: 2px;
+    border-radius: 6px;
+}
+
+/* Hover */
+QMenuBar::item:selected {
+    background-color: #F59E0B; /* naranja más claro */
+    color: #ffffff;
+}
+
+/* ====== QMenu ====== */
+QMenu {
+    background-color: #FFF7ED; /* crema */
+    border: 1px solid #E5A86B;
+    padding: 6px;
+}
+
+/* Items del menú */
+QMenu::item {
+    padding: 6px 25px 6px 20px;
+    color: #4B2E2E; /* café oscuro */
+    border-radius: 4px;
+}
+
+/* Hover en items */
+QMenu::item:selected {
+    background-color: #FDBA74; /* naranja suave */
+    color: #3B1F1F;
+}
+
+/* Separador */
+QMenu::separator {
+    height: 1px;
+    background: #E5A86B;
+    margin: 4px 0px;
+}
+
+/* ====== QAction (indirecto) ====== */
+/* Nota: QAction no se estiliza directamente, 
+   pero se ve reflejado en QMenu::item */
+
+/* ====== Extra: bordes suaves ====== */
+QMenuBar, QMenu {
+    border-radius: 8px;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>44</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuEjercicios">
+    <property name="title">
+     <string>Ejercicios</string>
+    </property>
+    <addaction name="actionPSP1"/>
+    <addaction name="separator"/>
+    <addaction name="actionPSP2"/>
+    <addaction name="separator"/>
+    <addaction name="actionSalir"/>
+   </widget>
+   <addaction name="menuEjercicios"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionPSP1">
+   <property name="text">
+    <string>PSP1</string>
+   </property>
+  </action>
+  <action name="actionPSP2">
+   <property name="text">
+    <string>PSP2</string>
+   </property>
+  </action>
+  <action name="actionSalir">
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
