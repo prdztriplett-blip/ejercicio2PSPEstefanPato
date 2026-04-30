@@ -98,6 +98,8 @@ QMenuBar, QMenu {
     <addaction name="separator"/>
     <addaction name="actionPSP3"/>
     <addaction name="separator"/>
+    <addaction name="actionPSP4"/>
+    <addaction name="separator"/>
     <addaction name="actionSalir"/>
    </widget>
    <addaction name="menuEjercicios"/>
@@ -121,6 +123,11 @@ QMenuBar, QMenu {
   <action name="actionPSP3">
    <property name="text">
     <string>PSP3</string>
+   </property>
+  </action>
+  <action name="actionPSP4">
+   <property name="text">
+    <string>PSP4</string>
    </property>
   </action>
  </widget>

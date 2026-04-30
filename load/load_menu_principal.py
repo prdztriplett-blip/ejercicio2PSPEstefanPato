@@ -3,7 +3,7 @@ from PyQt5.QtWidgets import QMainWindow
 from load.load_venta_psp1 import VentanaPSP1
 from load.load_venta_psp2 import VentanaPSP2
 from load.load_venta_psp3 import VentanaPSP3
-
+from load.load_venta_psp4 import VentanaPSP4
 
 class MenuPrincipal(QMainWindow):
     def __init__(self):
@@ -13,6 +13,7 @@ class MenuPrincipal(QMainWindow):
         self.actionPSP1.triggered.connect(self.abrir_psp1)
         self.actionPSP2.triggered.connect(self.abrir_psp2)
         self.actionPSP3.triggered.connect(self.abrir_psp3)
+        self.actionPSP4.triggered.connect(self.abrir_psp4)
         self.actionSalir.triggered.connect(self.close)
 
     def abrir_psp1(self):
@@ -26,3 +27,7 @@ class MenuPrincipal(QMainWindow):
     def abrir_psp3(self):
         self.psp3 = VentanaPSP3()
         self.psp3.show()
+    
+    def abrir_psp4(self):
+        self.psp4 = VentanaPSP4()
+        self.psp4.show()

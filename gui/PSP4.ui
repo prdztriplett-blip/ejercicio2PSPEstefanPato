@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>558</width>
+    <height>398</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    background-color: #EAF4FF;
+    color: #1E3A5F;
+    font-family: Segoe UI, Arial;
+    font-size: 10pt;
+}
+
+QPushButton {
+    background-color: #7DB7FF;
+    color: #FFFFFF;
+    border: 1px solid #5A9BE6;
+    border-radius: 10px;
+    padding: 6px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #5FA8FF;
+}
+
+QPushButton:pressed {
+    background-color: #3F8EF5;
+}
+
+QLineEdit, QTextEdit {
+    background-color: #FFFFFF;
+    border: 2px solid #A8D0FF;
+    border-radius: 8px;
+    padding: 5px;
+    color: #1E3A5F;
+}
+
+QLabel {
+    color: #245A9C;
+    font-weight: bold;
+}
+
+QMenuBar {
+    background-color: #D8ECFF;
+}
+
+QMenuBar::item:selected {
+    background-color: #7DB7FF;
+}
+
+QStatusBar {
+    background-color: #D8ECFF;
+    color: #1E3A5F;
+}</string>
+  </property>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>30</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Resultados </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>60</y>
+     <width>61</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>significancia:l</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>80</y>
+     <width>47</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>r2:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>110</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>b0:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="boton_calcular">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>280</y>
+     <width>211</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Calcular</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>140</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>b1:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>170</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>yk:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_14">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>200</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>t:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_16">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>230</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Rango:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_18">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>260</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>UPI:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_20">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>290</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>LPI</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_1">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>60</y>
+     <width>41</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_r2">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>90</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_b0">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>110</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_b1">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>140</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_yk">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>170</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_t">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>200</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_rango">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>230</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_upi">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>260</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_lpi">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>290</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QSplitter" name="splitter_4">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>30</y>
+     <width>238</width>
+     <height>99</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+   <widget class="QSplitter" name="splitter">
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Grados de libertad:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="edit_dof"/>
+   </widget>
+   <widget class="QSplitter" name="splitter_2">
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>Valor de p:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="edit_p"/>
+   </widget>
+   <widget class="QSplitter" name="splitter_3">
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <widget class="QLabel" name="label_3">
+     <property name="text">
+      <string>xk:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="xk_txt"/>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
